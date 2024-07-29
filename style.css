@@ -1,0 +1,169 @@
+/*Toda la página*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Todo el cuerpo*/
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    height: 80px;
+    font-size: 16px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+/*Icono pinterest*/
+#pinterest-icon{
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+}
+/*Color gris al seleccionarlo*/
+#pinterest-icon:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+}
+/*Lista de menú izquierda*/
+.first-list{
+    display: flex;
+}
+.first-list li{
+    list-style: none;
+    padding: 0px 12px;
+}
+.first-list a{
+    text-decoration: none;
+    color: black;
+}
+/*Color de inicio*/
+#inicio{
+    background-color: black;
+    color: white;
+    padding: 14px 12px;
+    border-radius: 25px;
+}
+/*Barra de búsqueda*/
+.search{
+    flex-grow: 1;
+    height: 48px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+}
+/*Cambiar color al poner cursor en la barra de búsqueda*/
+.search:hover{
+    background-color: #e1e1e1;
+}
+/*Borde color azul en barra de búsqueda*/
+.search:focus-within{
+    border: 4px solid #7fc1ff;
+}
+/*Alinear barra*/
+.barra{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+/*Centrar y acomodar lupa y entrada de texto*/
+#lupa{
+    padding: 13px;
+    color: #767676;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.barra input{
+    border: none;
+    background-color: inherit;
+    outline: none;
+    padding: 0px 8px 0px 0px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+/*Lista de menú derecha*/
+.right-items span{
+    padding: 8px;
+    color: #767676;
+    font-size: 28px;
+}
+/*Color gris al seleccionarlos*/
+.right-items span:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+    cursor: pointer;
+}
+/*Estilos de columnas de imagenes en Main*/
+.contenido{
+    position: absolute;
+    margin-top: 80px;
+}
+.imagenes{
+    columns: 5 240px;
+    margin: auto;
+}
+.card-image{
+    position: relative;
+    padding: 6px;
+}
+.card-image img{
+    border-radius: 15px;
+    min-width: 240px;
+    max-width: 240px;
+}
+/*Botones al seleccionar una imagen*/
+.card-image:hover > :first-child{
+    filter: brightness(60%);
+}
+.card-image:hover > * {
+    visibility: visible;
+    display: inline;
+}
+.button{
+    position: absolute;
+    left: 57%;
+    top: 5%;
+    padding: 13px 15px;
+    background-color: #e60023;
+    border-radius: 30px;
+    border: none;
+    visibility: hidden;
+}
+.card-image button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.oculto1{
+    position: absolute;
+    left: 63%;
+    bottom: 8%;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
+.oculto2{
+    position: absolute;
+    left: 80%;
+    bottom: 8%;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
